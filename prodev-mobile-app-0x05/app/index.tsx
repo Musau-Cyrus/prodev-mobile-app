@@ -28,7 +28,7 @@ export default function Index(){
         <Text style={{ ...styles.buttonPrimaryText, color: "black"}}>Join here</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.buttonSecondary} onPress={() =>router.push('/Sign')}>
+      <TouchableOpacity style={styles.buttonSecondary} onPress={() =>router.push('/signin')}>
         <Text style={ styles.buttonSecondaryText}>Sign In</Text>
       </TouchableOpacity>
     </View>
