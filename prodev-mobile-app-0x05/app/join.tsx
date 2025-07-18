@@ -2,13 +2,14 @@ import { Text, TextInput, View, TouchableOpacity, Image } from "react-native";
 import { styles } from "@/styles/_join"; 
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 
 export default function Index() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <View style={styles.iconsection}>
-          <Ionicons name="arrow-back" size={25} />
+          <Ionicons name="arrow-back" size={25} onPress={() =>router.push('/')}/>
           <Image source={require('@/assets/images/logo.png')} />
         </View>
         <Text style={styles.titleText}>Create Your</Text>
